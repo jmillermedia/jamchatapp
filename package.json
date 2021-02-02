@@ -6,6 +6,7 @@
   "scripts": {
     "start-dev": "nodemon app",
     "browsync": "browser-sync start --proxy 'localhost:5050' --files 'index.html' 'chat.html' 'public'",
+    "kill-port": "kill-port 3000",
     "start": "node app"
   },
   "keywords": [],
