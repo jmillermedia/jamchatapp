@@ -23,6 +23,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &__title {
+        text-transform: uppercase;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 8px 8px 8px #cbced1,
+                    -8px -8px 8px #FFF;
+    }
 }
 
 .fields {
@@ -61,5 +69,11 @@
         font-weight: 700;
         text-align: center;
         background-color: #24cfaa;
+    }
+
+    &__justChat {
+        color: $main-text-color;
+        text-decoration: none;
+        font-weight: 700;
     }
 }

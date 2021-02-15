@@ -7,4 +7,7 @@
 // sass —watch assets/sass:public/css —style compressed
 body {
     background-color: $main-bg-color;
+    body::-webkit-scrollbar {
+        width: 1em;
+}
 }

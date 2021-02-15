@@ -4,7 +4,10 @@ export default {
     `
     <article class="new-message animate__animated animate__zoomIn" :class="{ 'my-message' : matchedID }">
         <h4>{{msg.message.name}} says:</h4>
-        <p>{{msg.message.content}}</p>
+        <div class="messageContent">
+            <p>{{msg.message.content}}</p>
+            <p>{{msg.message.timestamp}}</p>
+        </div>
     </article>
     `,
 
