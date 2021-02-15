@@ -6,12 +6,14 @@
   "scripts": {
     "start-dev": "nodemon app",
     "browsync": "browser-sync start --proxy 'localhost:5050' --files 'index.html' 'chat.html' 'public'",
+    "kill-port": "kill-port 3000",
     "start": "node app"
   },
   "keywords": [],
   "author": "JM Media & Design",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "express": "^4.17.1",
     "socket.io": "^3.1.0"
   }
