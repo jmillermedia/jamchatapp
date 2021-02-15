@@ -1,4 +1,10 @@
+
 @import 'modules/vars';
-@import 'modules/defaults';
+@import 'modules/index';
+@import 'modules/chat';
 
 // import mqs here later
+// sass —watch assets/sass:public/css —style compressed
+body {
+    background-color: $main-bg-color;
+}

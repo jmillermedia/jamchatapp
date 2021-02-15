@@ -13,6 +13,7 @@
   "author": "JM Media & Design",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "express": "^4.17.1",
     "socket.io": "^3.1.0"
   }
