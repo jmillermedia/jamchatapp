@@ -23,18 +23,24 @@ import ChatMessage from "./components/TheMessageComponent.js";
             nickname: "",
             username: "",
             socketID: "",
-            message: ""
+            message: "",
+            date: ""
         },
 
         created: function () {
             console.log(`it's alive`)
+            this.nickname = window.localStorage.getItem('name')
         },
 
         methods: {
             dispatchMessage() {
                 // debugger;
-                socket.emit('chatmessage', {content: this.message, name: this.nickname || 'Anonymous'});
+                socket.emit('chatmessage', {content: this.message, name: this.nickname || 'Anonymous', date: this.date});
                 this.message = "";
+            },
+            setNickname() {
+                window.localStorage.setItem("name", this.nickname);
+                window.location = "/chat";
             }
         },
 
