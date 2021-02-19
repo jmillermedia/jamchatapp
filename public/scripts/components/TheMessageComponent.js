@@ -1,5 +1,5 @@
 export default {
-    props: ['msg', 'socketid'],
+    props: ['msg', 'socketid', 'date'],
     template:
     `
     <article class="new-message animate__animated animate__zoomIn" :class="{ 'my-message' : matchedID }">
@@ -7,6 +7,7 @@ export default {
         <div class="messageContent">
             <p>{{msg.message.content}}</p>
             <p>{{msg.message.timestamp}}</p>
+            <p>{{msg.message.date}}</p>
         </div>
     </article>
     `,
